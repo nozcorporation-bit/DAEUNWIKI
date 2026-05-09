@@ -19,9 +19,16 @@
 - 키워드 데이터: `2026-05-09_키워드데이터_3개월.csv`
 - 광고 자료: `2026-05-09_브랜드명_광고제목.md`
 
-## 권장 하위 구조 (필요할 때 LLM이 생성)
-- `raw/keywords/` — 키워드 조회수 데이터
-- `raw/ads/` — 광고 영상 링크·메타데이터·트랜스크립트
+## 하위 구조
+- `raw/refs/` — **레퍼런스 콘텐츠 (메인)** — 인플루언서·크리에이터의 오가닉 콘텐츠 + 영감 주는 모든 광고
+  - `raw/refs/instagram/` — Reels, 피드
+  - `raw/refs/tiktok/`
+  - `raw/refs/youtube/` — Shorts, 일반 영상
+- `raw/ads/` — 광고 라이브러리에서 의도적으로 찾은 광고 (서브, 런칭 후 우선순위↑)
+  - `raw/ads/meta/` — Facebook·Instagram 광고 라이브러리
+  - `raw/ads/tiktok/` — TikTok Creative Center
+  - `raw/ads/youtube/`
+- `raw/keywords/` — 키워드 조회수 데이터 (런칭 후 더 중요)
 - `raw/articles/` — 기사·리포트 클리핑
 - `raw/assets/` — 이미지·스크린샷·첨부
 
